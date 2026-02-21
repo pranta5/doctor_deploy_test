@@ -1,5 +1,5 @@
 import app from "./app.js";
-import dbconnect from "./config/db.js";
+import dbconnect from "./src/config/db.js";
 import dns from "dns";
 const port = process.env.PORT;
 const startServer = async () => {

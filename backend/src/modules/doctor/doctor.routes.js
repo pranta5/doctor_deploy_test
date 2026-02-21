@@ -4,7 +4,7 @@ import {
   setAvailability,
   setRoleDoctor,
 } from "./doctor.controller.js";
-import { authValidate } from "../../middlewares/validate.middlewares.js";
+import { authValidate } from "../../config/middlewares/validate.middlewares.js";
 import { getAvailableSlot } from "../appointment/appointment.controller.js";
 
 const router = express.Router();

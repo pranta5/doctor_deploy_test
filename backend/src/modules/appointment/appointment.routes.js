@@ -5,7 +5,7 @@ import {
   getMyAppointment,
   updateAppointmentStatus,
 } from "./appointment.controller.js";
-import { authValidate } from "../../middlewares/validate.middlewares.js";
+import { authValidate } from "../../config/middlewares/validate.middlewares.js";
 const router = express.Router();
 
 router.post("/create", authValidate(), createAppointment);

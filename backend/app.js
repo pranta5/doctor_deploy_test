@@ -2,11 +2,11 @@ import dotenv from "dotenv";
 import express from "express";
 import cookieparser from "cookie-parser";
 import cors from "cors";
-import userRouter from "./modules/user/user.routes.js";
-import authRouter from "./modules/auth/auth.routes.js";
-import appointmentRouter from "./modules/appointment/appointment.routes.js";
-import doctorRouter from "./modules/doctor/doctor.routes.js";
-import { errorHandler } from "./middlewares/error.middleware.js";
+import userRouter from "./src/modules/user/user.routes.js";
+import authRouter from "./src/modules/auth/auth.routes.js";
+import appointmentRouter from "./src/modules/appointment/appointment.routes.js";
+import doctorRouter from "./src/modules/doctor/doctor.routes.js";
+import { errorHandler } from "./src/config/middlewares/error.middleware.js";
 
 dotenv.config();
 const app = express();

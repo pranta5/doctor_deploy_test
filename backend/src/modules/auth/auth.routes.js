@@ -5,7 +5,7 @@ import {
   logout,
   registerUser,
 } from "./auth.controller.js";
-import { authValidate } from "../../middlewares/validate.middlewares.js";
+import { authValidate } from "../../config/middlewares/validate.middlewares.js";
 
 const router = express.Router();
 router.post("/register", registerUser);
