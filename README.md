@@ -99,7 +99,11 @@ The application implements authentication, role-based authorization, appointment
    ```bash
     npm install
    ```
-7. Start the development server:
+7.  Create a .env file with the following variables:
+   ```bash
+VITE_API_URL="api base url"
+```
+8. Start the development server:
    ```bash
     npm run dev
    ```
