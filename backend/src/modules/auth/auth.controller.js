@@ -63,6 +63,7 @@ export const LoginUser = async (req, res, next) => {
     res.cookie("token", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "development" ? false : true,
+      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
       maxAge: process.env.COOKIE_EXPIRE,
     });
     return res.status(200).json({
